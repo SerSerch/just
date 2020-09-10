@@ -1,0 +1,27 @@
+.top-menu
+  .top-menu__row._container._row
+    a.top-menu__logo-box.link(href="/")
+      img.top-menu__logo(src=require("../../svg/logo.svg") alt="just")
+    .top-menu__space
+    input.top-menu__checkbox(id="menu" type="checkbox")
+    label.top-menu__button(for="menu")
+      i.top-menu__button-icon
+    nav.top-menu__nav
+      label.top-menu__background(for="menu")
+      label.top-menu__button._close(for="menu")
+        i.top-menu__button-icon
+      ul.top-menu__list
+        li.top-menu__item
+          a.top-menu__link.link(href="#")
+            | Услуги
+        li.top-menu__item
+          a.top-menu__link.link(href="#")
+            | Пакеты
+        li.top-menu__item
+          a.top-menu__link.link(href="#")
+            | Отзывы
+        li.top-menu__item
+          a.top-menu__link.link(href="#")
+            | Контакты
+    .top-menu__phone-box
+      a.link.top-menu__phone(href="tel:80000000000") 8 (000) 000-00-00

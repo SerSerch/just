@@ -1,0 +1,50 @@
+input#modal-close.modal__checkbox(type="checkbox")
+aside.modal
+  label.modal__bg(for="modal-close")
+  ._col-12.modal__form-box
+    form._row.modal__form._p-n(action="/mail.php" method="POST")
+      ._col-12.modal__caption
+        | Свяжитесь с нами прямо сейчас
+      ._col-12.modal__text
+        | Оставьте свой номер телефона и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;рабочее время
+      ._col-12
+        input.input.modal__input#modal-phone(name="phone" type="tel" placeholder=" " required="required")
+        label.modal__label(for="modal-phone") Ваш телефон
+      ._col-12
+        button.button.modal__button(type="submit")
+          | Оставить заявку
+      .modal__label-box
+        input#check2.check(name="check-personal" type="checkbox" checked="checked" required="required")
+        label.check-label(for="check2")
+          | Даю согласие на&nbsp;обработку
+          br
+          a.link(href="/privacy-policy/") персональных данных
+  label.modal__close(for="modal-close")
+
+input#complete-modal.modal__checkbox(type="checkbox")
+aside.modal
+  label.modal__bg(for="complete-modal")
+  ._col-12.modal__form-box
+    ._row.modal__form._p-n
+      ._col-12.modal__caption
+        | Заявка успешно отправлена
+      ._col-12.modal__text
+        | Мы свяжемся с Вами в течении рабочего дня
+      ._col-12.modal__input-box
+        label.button.modal__button(for="complete-modal")
+          | Отлично
+  label.modal__close(for="complete-modal")
+
+input#error-modal.modal__checkbox(type="checkbox")
+aside.modal
+  label.modal__bg(for="error-modal")
+  ._col-12.modal__form-box
+    ._row.modal__form._p-n
+      ._col-12.modal__caption
+        | Произошла ошибка
+      ._col-12.modal__text
+        | Попробуйте повторить попытку позже.
+      ._col-12.modal__input-box
+        label.button.modal__button(for="error-modal")
+          | Хорошо
+  label.modal__close(for="error-modal")
