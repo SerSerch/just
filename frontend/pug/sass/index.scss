@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6, .body0  {
   text-transform: uppercase;
 }
 
+h1 {
+  text-transform: none;
+}
+
 h2 {
   font-family: $caption-font;
   font-weight: 400;
@@ -96,7 +100,7 @@ strong {
 .button,
 .input {
   width: 100%;
-  min-height: 48px;
+  min-height: 46px;
   display: flex;
   justify-content: center;
   border: 1px solid $p-active-color;
@@ -110,7 +114,7 @@ strong {
 }
 
 .button {
-  max-width: 270px;
+  max-width: 290px;
   align-items: center;
   font-weight: 900;
   color: $s-text-color;
