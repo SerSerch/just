@@ -1,0 +1,37 @@
+@import "../vars";
+
+.first {
+  background-color: $p-text-color;
+  min-height: 740px;
+  padding-top: 130px - 15;
+  background-image: url(../img/first.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-sizing: border-box;
+  &__label-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    display: flex;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .first {
+    &__label-box {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__text {
+      justify-content: flex-start;
+    }
+  }
+}

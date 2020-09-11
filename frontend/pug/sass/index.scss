@@ -160,6 +160,10 @@ strong {
   color: $s-text-color;
 }
 
+._c {
+  color: $p-active-color;
+}
+
 @import "grid";
 
 .check {
