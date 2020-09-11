@@ -1,0 +1,76 @@
+@import "../vars";
+
+.about {
+  padding: 45px 0;
+  background-color: $p-text-color;
+  box-sizing: border-box;
+  &:before {
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 570px;
+    background-image: url(../img/about.png);
+    background-position: bottom center;
+  }
+  &:after {
+    left: 0;
+    right: 0;
+    bottom: -151px;
+    height: 322px;
+    background-image: url(../img/transition1.png);
+    background-position: right -150px bottom;
+  }
+  &__button-box {
+    display: flex;
+    padding-top: 570px + 57;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &__text {
+    padding: 54px 0;
+    font-size: 0.875rem;
+    line-height: 1.96;
+    box-sizing: border-box;
+  }
+  &__list {
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  &__item {
+    position: relative;
+    padding: 10px 0 10px 43px - 20;
+    font-size: 0.875rem;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 15px;
+      left: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    &:before {
+      right: 50%;
+      background-position: bottom right 117px;
+    }
+    &:after {
+      left: 50%;
+      background-position: left 515px bottom;
+    }
+    &__caption {
+      text-align: left;
+    }
+  }
+}

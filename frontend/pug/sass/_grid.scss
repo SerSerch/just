@@ -36,10 +36,11 @@ xxl > 1600
 }
 
 ._col {
+  position: relative;
+  z-index: 10;
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
-  position: relative;
   @for $i from 1 to 13 {
     //&-#{$i},
     &-sm-#{$i},
@@ -131,7 +132,7 @@ xxl > 1600
   //}
 
   ._col-md {
-    @for $i from 6 to 13 {
+    @for $i from 5 to 13 {
       &-#{$i} {
         flex: 0 0 (100% / 12) * $i;
         max-width: (100% / 12) * $i;
