@@ -14,12 +14,13 @@
     justify-content: center;
   }
   &__item-box {
+    width: 100%;
+    min-width: 320px - 30;
+    max-width: 364px + 30;
     padding: 15px;
     box-sizing: border-box;
   }
   &__item {
-    min-width: 320px - 60;
-    max-width: 364px;
     min-height: 206px;
     background-color: #fff;
     box-shadow: 0 20px 20px rgba(233, 236, 238, 0.6);
