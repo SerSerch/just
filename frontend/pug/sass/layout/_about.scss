@@ -12,14 +12,6 @@
     background-image: url(../img/about.png);
     background-position: bottom center;
   }
-  &:after {
-    left: 0;
-    right: 0;
-    bottom: -151px;
-    height: 322px;
-    background-image: url(../img/transition1.png);
-    background-position: right -150px bottom;
-  }
   &__button-box {
     display: flex;
     padding-top: 570px + 57;
@@ -67,6 +59,10 @@
     }
     &:after {
       left: 50%;
+      right: 0;
+      bottom: -151px;
+      height: 322px;
+      background-image: url(../img/transition1.png);
       background-position: left 515px bottom;
     }
     &__caption {

@@ -1,0 +1,33 @@
+@import "../vars";
+
+.clients {
+  padding: 25px 0;
+  background-color: $s-background-color;
+  box-sizing: border-box;
+  &__title {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  &__big {
+    font-weight: 700;
+  }
+  &__slider {
+    padding: 20px 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients {
+    &:before {
+      left: 0;
+      right: 50%;
+      bottom: -134px;
+      height: 465px;
+      background-image: url(../img/transition2.png);
+      background-position: bottom right 265px;
+    }
+    &__title {
+      font-size: 2.125rem;
+    }
+  }
+}

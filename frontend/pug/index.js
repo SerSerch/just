@@ -77,35 +77,14 @@ for (let i of document.querySelectorAll('input[type="tel"]')) {
   i.addEventListener('input', inputPhone);
 }
 
-// const swiperHeader = new Swiper('.header__swiper', {
-//   loop: true,
-//   parallax: true,
-//   effect: 'fade',
-//   fadeEffect: {
-//     crossFade: true
-//   },
-//   autoplay: {
-//     delay: 5000,
-//   },
-//   navigation: {
-//     prevEl: '#header-prev',
-//     nextEl: '#header-next',
-//   },
-//   pagination: {
-//     el: '#header-pagination',
-//     clickable: true,
-//   },
-// });
-// const swiperModal = new Swiper('.modal__slider', {
-//   navigation: {
-//     prevEl: '#modal-prev',
-//     nextEl: '#modal-next',
-//   },
-//   pagination: {
-//     el: '#modal-pagination',
-//     clickable: true,
-//   },
-// });
+const swiperClients = new Swiper('#clients', {
+  slidesPerView: 'auto',
+  spaceBetween: 24,
+  navigation: {
+    prevEl: '#clients-prev',
+    nextEl: '#clients-next',
+  },
+});
 
 const sendForm = function (e) {
   e.preventDefault();
