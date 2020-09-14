@@ -6,6 +6,7 @@
     line-height: 1.37;
     font-size: 1.25rem;
     font-weight: 700;
+    box-sizing: border-box;
   }
   &__list {
     padding-top: 50px;
@@ -14,9 +15,10 @@
   }
   &__item-box {
     padding: 15px;
+    box-sizing: border-box;
   }
   &__item {
-    min-width: 364px;
+    min-width: 320px - 60;
     max-width: 364px;
     min-height: 206px;
     background-color: #fff;
