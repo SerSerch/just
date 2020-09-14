@@ -1,6 +1,68 @@
 @import "../vars";
 
 .result {
-  min-height: 500px;
+  padding: 45px 0 53px - 15;
   background-color: $p-text-color;
+  &__list {
+    padding: 20px 0 34px;
+    justify-content: center;
+  }
+  &__item {
+    max-width: 390px;
+    min-height: 160px + 15;
+    padding: 15px 30px 15px 90px + 15;
+    background-repeat: no-repeat;
+    background-position: left 15px top 15px;
+    &._i1 {
+      background-image: url(../img/result1.png);
+      background-position: left 25px top 15px;
+    }
+    &._i2 {
+      background-image: url(../img/result2.png);
+    }
+    &._i3 {
+      background-image: url(../img/result3.png);
+    }
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 27px;
+    color: $p-active-color;
+    line-height: 1.53;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 3px solid #fff;
+    }
+  }
+  &__text {
+    padding-top: 23px;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    color: $s-text-color;
+  }
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .result {
+    &:before {
+      top: -44px;
+      left: 50%;
+      right: 0;
+      height: 280px;
+      background-image: url(../img/transition3.png);
+      background-position: top left 458px;
+    }
+  }
 }
