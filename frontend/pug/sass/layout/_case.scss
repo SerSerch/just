@@ -1,6 +1,15 @@
 @import "../vars";
 
 .case {
+  padding: 55px 0 5px;
+  &:after {
+    left: 50%;
+    right: 0;
+    bottom: 106px;
+    height: 302px;
+    background-image: url(../img/case2.png);
+    background-position: bottom left 200px;
+  }
   &__box {
     display: flex;
     padding: 30px 15px;
@@ -21,6 +30,12 @@
     padding-bottom: 5px;
     font-size: 1.5rem;
     font-weight: 700;
+  }
+  &__left-text {
+    padding-bottom: 20px;
+    line-height: 1.43;
+    font-size: 0.875rem;
+    font-weight: 600;
   }
   &__not {
     position: relative;
@@ -70,6 +85,8 @@
     font-size: 1.25rem;
     font-weight: 700;
     color: $p-active-color;
+    text-transform: uppercase;
+    font-style: italic;
   }
   &__right-text {
     padding-top: 20px;
@@ -77,10 +94,26 @@
     font-size: 0.875rem;
     font-weight: 600;
   }
+  &__sub-text {
+    font-style: italic;
+    line-height: 1.31;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
   .case {
+    &:before {
+      left: 0;
+      right: 50%;
+      top: 70px;
+      height: 197px;
+      background-image: url(../img/case1.png);
+      background-position: top right 631px;
+    }
     &__box {
       flex-wrap: nowrap;
     }
