@@ -168,16 +168,10 @@ xxl > 1600
 
   ._offset-lg {
     margin-left: auto;
-    //@for $i from 0 to 13 {
-    //  &-#{$i} {
-    //    margin-left: (100% / 12) * $i;
-    //  }
-    //}
-    &-1 {
-      margin-left: (100% / 12) * 1;
-    }
-    &-7 {
-      margin-left: (100% / 12) * 7;
+    @for $i from 1 to 5 {
+      &-#{$i} {
+        margin-left: (100% / 12) * $i;
+      }
     }
   }
 
