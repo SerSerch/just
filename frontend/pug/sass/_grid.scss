@@ -191,7 +191,7 @@ xxl > 1600
   //}
 
   ._col-lg {
-    @for $i from 4 to 9 {
+    @for $i from 3 to 9 {
       &-#{$i} {
         flex: 0 0 (100% / 12) * $i;
         max-width: (100% / 12) * $i;
