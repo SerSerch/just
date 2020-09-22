@@ -29,7 +29,7 @@
     padding-bottom: 27px;
     color: $p-active-color;
     line-height: 1.53;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
     text-transform: uppercase;
     &:before {
@@ -63,6 +63,9 @@
       height: 280px;
       background-image: url(../img/transition3.png);
       background-position: top left 458px;
+    }
+    &__title {
+      font-size: 1.25rem;
     }
   }
 }

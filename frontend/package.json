@@ -1,5 +1,5 @@
 {
-  "name": "komfortpotolok",
+  "name": "just",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,7 @@
     "build": "rimraf ./html && webpack --mode production"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

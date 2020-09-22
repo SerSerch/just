@@ -69,7 +69,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .body0  {
   margin: 0;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -80,7 +80,7 @@ h1 {
 
 h2 {
   font-family: $caption-font;
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
 }
@@ -265,9 +265,6 @@ strong {
     width: 100%;
     font-size: 0.875rem;
     padding: 15px 15px 23px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
   }
   &__label {
     display: flex;
@@ -288,7 +285,7 @@ strong {
   }
   &__caption {
     padding: 15px 15px 7px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
   }
   &__text {

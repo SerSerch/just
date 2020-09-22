@@ -4,13 +4,13 @@
   padding-top: 45px;
   padding-bottom: 30px;
   &__caption {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
     font-style: italic;
   }
   &__list {
-    padding-top: 60px;
+    padding-top: 30px;
   }
   &__item-box {
     padding: 13px 15px 41px;
@@ -70,6 +70,12 @@
       height: 608px;
       background-image: url(../img/transition5.png);
       background-position: left 264px bottom;
+    }
+    &__caption {
+      font-size: 1.875rem;
+    }
+    &__list {
+      padding-top: 60px;
     }
   }
 }

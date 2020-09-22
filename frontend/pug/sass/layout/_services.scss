@@ -20,9 +20,11 @@
     box-sizing: border-box;
   }
   &__item {
+    display: flex;
     position: relative;
     height: 100%;
     padding: 20px 20px 20px 40px;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 40px;
     box-sizing: border-box;
@@ -60,7 +62,7 @@
     align-items: flex-end;
     text-transform: uppercase;
     line-height: 1.53;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     box-sizing: border-box;
     &:before {
@@ -75,8 +77,17 @@
   }
   &__text {
     padding-top: 18px;
+    flex-grow: 1;
     line-height: 1.79;
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .services {
+    &__title {
+      font-size: 1.25rem;
+    }
   }
 }
 

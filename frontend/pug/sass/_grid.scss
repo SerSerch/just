@@ -115,10 +115,11 @@ xxl > 1600
 
   ._offset-md {
     margin-left: auto;
-    @for $i from 6 to 7 {
-      &-#{$i} {
-        margin-left: (100% / 12) * $i;
-      }
+    &-1 {
+      margin-left: (100% / 12) * 1;
+    }
+    &-6 {
+      margin-left: (100% / 12) * 6;
     }
   }
 
@@ -203,14 +204,12 @@ xxl > 1600
     max-width: 1170px;
   }
 
-  //._offset-xl {
-  //  margin-left: auto;
-  //  @for $i from 0 to 13 {
-  //    &-#{$i} {
-  //      margin-left: (100% / 12) * $i;
-  //    }
-  //  }
-  //}
+  ._offset-xl {
+    margin-left: auto;
+    &-3 {
+      margin-left: (100% / 12) * 3;
+    }
+  }
 
   //._ml-xl {
   //  margin-right: auto;

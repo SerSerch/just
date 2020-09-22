@@ -3,11 +3,11 @@
   padding-bottom: 40px;
   &__title {
     padding-bottom: 30px;
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-align: center;
   }
   &__big-text {
-    font-size: 2.75rem;
+    font-size: 2rem;
     font-weight: 700;
   }
   &__zero {
@@ -24,11 +24,25 @@
     box-sizing: border-box;
   }
   &__proc {
-    font-size: 4.375rem;
+    font-size: 3rem;
     font-weight: 700;
   }
   &__button-box {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .audit {
+    &__title {
+      font-size: 2rem;
+    }
+    &__big-text {
+      font-size: 2.75rem;
+    }
+    &__proc {
+      font-size: 4.375rem;
+    }
   }
 }

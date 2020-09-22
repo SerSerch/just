@@ -9,22 +9,19 @@ aside.modal
         | Оставьте свой номер телефона и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;рабочее время
       ._col-12
         input.input.modal__input#modal-name(name="name" type="text" placeholder=" " required="required")
-        label.modal__label(for="modal-name") Имя
+        label.modal__label(for="modal-name") Имя*
       ._col-12
         input.input.modal__input#modal-phone(name="phone" type="tel" placeholder=" " required="required")
-        label.modal__label(for="modal-phone") Телефон
+        label.modal__label(for="modal-phone") Телефон*
       ._col-12
-        input.input.modal__input#modal-email(name="email" type="email" placeholder=" ")
-        label.modal__label(for="modal-email") Почта
+        input.input.modal__input#modal-email(name="email" type="email" placeholder=" " required="required")
+        label.modal__label(for="modal-email") Почта*
       ._col-12
         button.button.modal__button(type="submit")
           | Оставить заявку
       .modal__label-box
-        input#check2.check(name="check-personal" type="checkbox" checked="checked" required="required")
-        label.check-label(for="check2")
-          | Даю согласие на&nbsp;обработку
-          br
-          a.link(href="/privacy-policy/") персональных данных
+        | Нажимая на&nbsp;данную кнопку, Вы&nbsp;соглашаетесь&nbsp;с
+        a.link(href="/privacy-policy/") политикой конфиденциальности
   label.modal__close(for="modal-close")
 
 input#complete-modal.modal__checkbox(type="checkbox")

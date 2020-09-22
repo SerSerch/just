@@ -1,11 +1,11 @@
 #contacts.anchor
 section.feedback._transition
   ._container._row
-    ._col-12.feedback__caption
+    ._col-12.feedback__caption(data-aos="fade-up")
       | Используйте новые возможности для роста уже сейчас
       br
       span._c и&nbsp;увеличьте свою прибыль на&nbsp;00%
-    ._col-12._col-lg-6.feedback__text
+    ._col-12._col-lg-6.feedback__text(data-aos="fade-right" data-aos-delay="500")
       | Все просто:
       br
       | Мы&nbsp;создаем бренды.
@@ -21,19 +21,16 @@ section.feedback._transition
           | Начать можно уже сейчас
         ._col-12
           input.input.modal__input#feedback-name(name="name" type="text" placeholder=" " required="required")
-          label.modal__label(for="feedback-name") Имя
+          label.modal__label(for="feedback-name") Имя*
         ._col-12
           input.input.modal__input#feedback-phone(name="phone" type="tel" placeholder=" " required="required")
-          label.modal__label(for="feedback-phone") Телефон
+          label.modal__label(for="feedback-phone") Телефон*
         ._col-12
-          input.input.modal__input#feedback-email(name="email" type="email" placeholder=" ")
-          label.modal__label(for="feedback-email") Почта
+          input.input.modal__input#feedback-email(name="email" type="email" placeholder=" " required="required")
+          label.modal__label(for="feedback-email") Почта*
         ._col-12
           button.button.modal__button(type="submit")
             | Оставить заявку
         .modal__label-box
-          input#check1.check(name="check-personal" type="checkbox" checked="checked" required="required")
-          label.check-label(for="check1")
-            | Даю согласие на&nbsp;обработку
-            br
-            a.link(href="/privacy-policy/") персональных данных
+          | Нажимая на&nbsp;данную кнопку, Вы&nbsp;соглашаетесь&nbsp;с
+          a.link(href="/privacy-policy/") политикой конфиденциальности

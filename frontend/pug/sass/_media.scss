@@ -17,6 +17,12 @@
   h2, h3, .body0 {
     font-size: 2.5rem;
   }
+  .modal {
+    &__caption {
+      padding: 15px 15px 7px;
+      font-size: 1.25rem;
+    }
+  }
 }
 
 /*

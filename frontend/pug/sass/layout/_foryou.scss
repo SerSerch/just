@@ -54,6 +54,15 @@
 }
 
 @media (min-width: 768px) {
+  @keyframes size-icons {
+    from {
+      transform: translateX(-50%) scale(1);
+    }
+    to {
+      transform: translateX(-50%) scale(1.2);
+    }
+  }
+
   .foryou {
     &:before {
       top: -112px;
@@ -62,6 +71,20 @@
       height: 209px;
       background-image: url(../img/transition4.png);
       background-position: top right 636px;
+    }
+    &__item {
+      &._i1:before {
+        animation: 1.6s linear 0s infinite alternate size-icons;
+      }
+      &._i2:before {
+        animation: 1.6s linear 0.4s infinite alternate size-icons;
+      }
+      &._i3:before {
+        animation: 1.6s linear 0.8s infinite alternate size-icons;
+      }
+      &._i4:before {
+        animation: 1.6s linear 1.2s infinite alternate size-icons;
+      }
     }
   }
 }

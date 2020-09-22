@@ -11,10 +11,25 @@
   box-sizing: border-box;
   &__label-box {
     display: flex;
+    position: relative;
     justify-content: center;
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+    }
+    &:before {
+
+    }
+  }
+  &__label {
+    width: 246px;
+    height: 241px;
   }
   &__text {
     display: flex;
+    flex-direction: column;
     padding-left: 30px;
     justify-content: center;
     align-items: center;
@@ -30,7 +45,7 @@
       justify-content: flex-end;
     }
     &__text {
-      justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 }
