@@ -1,0 +1,48 @@
+.audit {
+  background-color: $p-text-color;
+  padding-bottom: 40px;
+  &__title {
+    padding-bottom: 30px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  &__big-text {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__zero {
+    font-weight: 700;
+  }
+  &__list {
+    justify-content: space-around;
+    padding-bottom: 15px;
+  }
+  &__item {
+    padding: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  &__proc {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .audit {
+    &__title {
+      font-size: 2rem;
+    }
+    &__big-text {
+      font-size: 2.75rem;
+    }
+    &__proc {
+      font-size: 4.375rem;
+    }
+  }
+}

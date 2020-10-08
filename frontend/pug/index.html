@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой слайдер</title>
+  <meta name="description" content="">
+  <!-- Latest compiled and minified CSS -->
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SLIDER -->
+
+  <div class="jumbotron keffy">
+    <div class="keffy__wrapper">
+      <div class="keffy__slide">1</div>
+      <div class="keffy__slide">2</div>
+      <div class="keffy__slide">3</div>
+      <div class="keffy__slide">4</div>
+    </div>
+    <div class="keffy__prev-b"><i class="icon-prev"></i></div>
+    <div class="keffy__next-b"><i class="icon-next"></i></div>
+    <div class="keffy__pagination"></div>
+  </div>
+
+  <!-- END SLIDER -->
+  <link rel="stylesheet" href="horizontal.css">
+  <script src="horizontalES5.js"></script>
+  <script>
+    let slider1 = new Keffy('.keffy');
+  </script>
+</body>
+
+</html>

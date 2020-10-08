@@ -1,0 +1,55 @@
+@import "../vars";
+
+.clients {
+  padding: 25px 0;
+  background-color: $s-background-color;
+  box-sizing: border-box;
+  &__title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  &__big {
+    font-weight: 700;
+  }
+  &__slider {
+    padding: 20px 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients {
+    &__buble {
+      position: absolute;
+      z-index: 2;
+      right: 50%;
+      bottom: -134px;
+      width: 318px;
+      height: 314px;
+      background-image: url(../img/clients.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateX(-594px);
+      animation: 40s linear 0s infinite clients-bg1;
+    }
+    &:after {
+      left: 0;
+      right: 50%;
+      bottom: 0;
+      height: 465px;
+      background-image: url(../img/transition2.png);
+      background-position: bottom right 265px;
+    }
+    &__title {
+      font-size: 2.125rem;
+    }
+  }
+
+  @keyframes clients-bg1 {
+    0% {
+      transform: translateX(-594px) rotate(0);
+    }
+    100% {
+      transform: translateX(-594px) rotate(360deg);
+    }
+  }
+}

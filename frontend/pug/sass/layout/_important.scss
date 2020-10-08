@@ -1,0 +1,40 @@
+@import "../vars";
+
+.important {
+  padding: 65px 0 30px;
+  &__text {
+    line-height: 1.875rem;
+  }
+  &__big {
+    color: $p-active-color;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  &__sub-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 768px) {
+  .important {
+    &:after {
+      left: 50%;
+      right: 0;
+      bottom: -7px;
+      height: 731px;
+      background-image: url(../img/important.png);
+      background-position: bottom left 81px;
+    }
+    &__caption {
+      text-align: left;
+    }
+    &__big {
+      font-size: 1.5rem;
+    }
+    &__sub-text {
+      font-size: 1.875rem;
+    }
+  }
+}
