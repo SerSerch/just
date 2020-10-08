@@ -5,10 +5,6 @@
   background-color: $p-text-color;
   min-height: 740px;
   padding-top: 130px - 15;
-  background-image: url(../img/first.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   box-sizing: border-box;
   &__label-box {
     display: flex;
@@ -32,6 +28,10 @@
 
 @media (min-width: 768px) {
   .first {
+    background-image: url(../img/first.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     overflow: hidden;
     &__buble-box {
       position: absolute;
