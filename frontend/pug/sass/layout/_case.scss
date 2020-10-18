@@ -19,6 +19,8 @@
     box-sizing: border-box;
   }
   &__left {
+    position: relative;
+    z-index: 10;
     width: 100%;
     max-width: 652px;
     padding: 25px 30px;
@@ -67,18 +69,6 @@
     background-color: #fff;
     box-shadow: 0 25px 15px rgba(233, 236, 238, 0.6);
     box-sizing: border-box;
-    &:before {
-      display: block;
-      position: absolute;
-      z-index: 11;
-      content: '';
-      top: -5px;
-      left: 50%;
-      width: 50px;
-      height: 50px;
-      background-image: url(../svg/decision.svg);
-      transform: translate(-50%, -50%) rotate(90deg);
-    }
   }
   &__right-title {
     font-size: 1.125rem;
@@ -91,6 +81,16 @@
     padding-top: 20px;
     line-height: 1.43;
     font-size: 0.875rem;
+  }
+  &__right-button {
+    position: absolute;
+    z-index: 11;
+    top: -5px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../svg/decision.svg);
+    transform: translate(-50%, -50%) rotate(90deg);
   }
   &__sub-text {
     font-style: italic;
@@ -128,8 +128,11 @@
     }
     &__box {
       flex-wrap: nowrap;
+      overflow: hidden;
     }
     &__left {
+      position: relative;
+      z-index: 10;
       max-width: 498px;
     }
     &__not {
@@ -138,11 +141,30 @@
     &__right {
       margin-top: 0;
       margin-left: 9px;
-      &:before {
-        top: 50%;
-        left: -5px;
-        transform: translate(-50%, -50%);
+      transform: translateX(-95%);
+      transition: transform .7s ease;
+      &._active {
+        transform: translateX(0);
       }
+    }
+    &__right &__right-title,
+    &__right &__right-text {
+      opacity: 0;
+      transition: opacity .7s ease;
+    }
+    &__right-button {
+      top: 50%;
+      left: auto;
+      right: 5px;
+      transform: translate(50%, -50%);
+      transition: transform .7s ease;
+    }
+    &__right._active &__right-button {
+      transform: translate(50%, -50%) rotate(-180deg);
+    }
+    &__right._active &__right-title,
+    &__right._active &__right-text {
+      opacity: 1;
     }
   }
 }

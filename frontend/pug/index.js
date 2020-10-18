@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'normalize.css';
 import 'aos/dist/aos.css';
 import './swiper-bundle.min.css';
+import './fonts/fonts.css'
 import './sass/index.scss';
 
 AOS.init({
@@ -144,4 +145,13 @@ const sendForm = function (e) {
 
 for (let i of document.querySelectorAll('form')) {
   i.addEventListener('submit', sendForm);
+}
+
+function openRight(e) {
+  const element = e.currentTarget;
+  element.parentElement.classList.toggle('_active')
+}
+
+for (let i of document.querySelectorAll('.case__right-button')) {
+  i.addEventListener('click', openRight);
 }

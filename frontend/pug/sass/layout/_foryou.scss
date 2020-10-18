@@ -54,15 +54,6 @@
 }
 
 @media (min-width: 768px) {
-  @keyframes size-icons {
-    from {
-      transform: translateX(-50%) scale(1);
-    }
-    to {
-      transform: translateX(-50%) scale(1.2);
-    }
-  }
-
   .foryou {
     &:before {
       top: -112px;
@@ -72,18 +63,30 @@
       background-image: url(../img/transition4.png);
       background-position: top right 636px;
     }
+  }
+
+  @keyframes size-icons {
+    from {
+      transform: translateX(-50%) scale(1);
+    }
+    to {
+      transform: translateX(-50%) scale(1.2);
+    }
+  }
+
+  .aos-animate .foryou {
     &__item {
       &._i1:before {
-        animation: 1.6s linear 0s infinite alternate size-icons;
+        animation: 1.6s linear 1s 4 alternate size-icons;
       }
       &._i2:before {
-        animation: 1.6s linear 0.4s infinite alternate size-icons;
+        animation: 1.6s linear 1.4s 4 alternate size-icons;
       }
       &._i3:before {
-        animation: 1.6s linear 0.8s infinite alternate size-icons;
+        animation: 1.6s linear 1.8s 4 alternate size-icons;
       }
       &._i4:before {
-        animation: 1.6s linear 1.2s infinite alternate size-icons;
+        animation: 1.6s linear 2.2s 4 alternate size-icons;
       }
     }
   }

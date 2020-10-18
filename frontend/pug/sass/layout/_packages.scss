@@ -57,11 +57,13 @@
   .packages {
     &:before {
       top: 63px;
-      left: 0;
       right: 50%;
+      width: 347px;
       height: 342px;
       background-image: url(../img/packages.png);
-      background-position: right 413px top;
+      background-position: right top;
+      transform: translateX(-413px);
+      animation: 40s linear 0s infinite packages-bl1;
     }
     &:after {
       left: 50%;
@@ -76,6 +78,14 @@
     }
     &__list {
       padding-top: 60px;
+    }
+  }
+  @keyframes packages-bl1 {
+    0% {
+      transform: translateX(-413px) rotate(0);
+    }
+    100% {
+      transform: translateX(-413px) rotate(360deg);
     }
   }
 }

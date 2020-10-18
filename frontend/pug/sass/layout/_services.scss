@@ -93,13 +93,33 @@
 
 @media (min-width: 992px) {
   .services {
+    overflow: hidden;
     &:before {
       left: 0;
       right: 50%;
       top: 0;
       bottom: 0;
       background-image: url(../img/services.png);
-      background-position: top 334px right 325px;
+      background-position: top 380px right 475px;
     }
+    &:after {
+      top: 340px;
+      right: 50%;
+      width: 264px;
+      height: 264px;
+      border-radius: 50%;
+      background-color: $p-active-color;
+      transform: translateX(-320px);
+      animation: 20s ease 0s infinite services-bl1;
+    }
+  }
+}
+
+@keyframes services-bl1 {
+  0% {
+    transform: translateX(-320px) scale(1);
+  }
+  50% {
+    transform: translate(-300px, -20px) scale(0.8);
   }
 }

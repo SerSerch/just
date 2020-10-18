@@ -3,6 +3,8 @@
 .clients {
   padding: 25px 0;
   background-color: $s-background-color;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
   &__title {
     font-size: 1.25rem;

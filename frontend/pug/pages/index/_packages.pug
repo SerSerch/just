@@ -3,25 +3,13 @@
   ._container._row
     ._col-12.packages__caption(data-aos="zoom-in")
       | Если Вы&nbsp;не&nbsp;знаете, какие конкретно услуги Вам нужны
+      br
+      | мы подготовили удобные пакеты:
     ._col-12._row._p-n.packages__list
       ._col-12._col-lg-4.packages__item-box
-        .packages__item(data-aos="fade-up" data-aos-delay="500")
+        .packages__item#packages-first(data-aos="fade-up" data-aos-delay="500")
           .packages__title
-            | &laquo;Для старта&raquo;
-          .packages__text
-            | Если Вы&nbsp;хотите
-            | создать новый бренд
-            | или запустить бизнес.
-          .packages__text
-            | Стоимость
-            br
-            strong._c от 00 000 рублей
-          .packages__button-box
-            label.button(for="modal-close") Получить предложение
-      ._col-12._col-lg-4.packages__item-box
-        .packages__item(data-aos="fade-up" data-aos-delay="1000")
-          .packages__title
-            | &laquo;Для ребрендинга&raquo;
+            | &laquo;Для улучшения&raquo;
           .packages__text
             | Если хотите, чтобы
             | Ваш текущий бренд
@@ -31,11 +19,25 @@
           .packages__text
             | Стоимость
             br
-            strong._c от 00 000 рублей
+            strong._c от 140 000 рублей
           .packages__button-box
             label.button(for="modal-close") Получить предложение
       ._col-12._col-lg-4.packages__item-box
-        .packages__item(data-aos="fade-up" data-aos-delay="1500")
+        .packages__item(data-aos="fade-up" data-aos-anchor="#packages-first" data-aos-delay="1000")
+          .packages__title
+            | &laquo;Для создания&raquo;
+          .packages__text
+            | Если Вы&nbsp;хотите
+            | создать новый бренд
+            | или запустить бизнес.
+          .packages__text
+            | Стоимость
+            br
+            strong._c от 200 000 рублей
+          .packages__button-box
+            label.button(for="modal-close") Получить предложение
+      ._col-12._col-lg-4.packages__item-box
+        .packages__item(data-aos="fade-up" data-aos-anchor="#packages-first" data-aos-delay="1500")
           .packages__title
             | &laquo;Для масштабирования&raquo;
           .packages__text
@@ -46,6 +48,6 @@
           .packages__text
             | Стоимость
             br
-            strong._c от 00 000 рублей
+            strong._c от 250 000 рублей
           .packages__button-box
             label.button(for="modal-close") Получить предложение
