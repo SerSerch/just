@@ -32,6 +32,13 @@
     max-width: 488px;
     margin: 0 auto;
   }
+  &__slider {
+    position: relative;
+    max-width: 320px - 30;
+    margin: 0 auto;
+    padding: 0 50px - 15;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: 576px) {
@@ -44,6 +51,9 @@
     }
     &__text {
       padding: 0 0 0 30px;
+    }
+    &__slider {
+      margin: 0;
     }
   }
 }

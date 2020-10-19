@@ -105,12 +105,28 @@ for (let i of document.querySelectorAll('input[type="tel"]')) {
 
 const swiperClients = new Swiper('#clients', {
   slidesPerView: 'auto',
-  spaceBetween: 24,
+  spaceBetween: 27,
   navigation: {
     prevEl: '#clients-prev',
     nextEl: '#clients-next',
   },
 });
+
+for (let i of document.querySelectorAll('.swiper-container._js')) {
+  let id = i.id;
+  let diet = new Swiper(`#${id}`, {
+    slidesPerView: 1,
+    spaceBetween: 27,
+    navigation: {
+      prevEl: `#${id}-prev`,
+      nextEl: `#${id}-next`,
+    },
+    pagination: {
+      el: `#${id}-pagination`,
+      type: 'fraction',
+    },
+  });
+}
 
 const sendForm = function (e) {
   e.preventDefault();

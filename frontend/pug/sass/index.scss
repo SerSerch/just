@@ -332,7 +332,7 @@ strong {
     z-index: 10;
     top: 15px;
     bottom: 15px;
-    width: 75px;
+    width: 68px;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
@@ -352,6 +352,18 @@ strong {
       border-radius: 50%;
       transform: translateY(-50%);
       transition: all .3s ease;
+      box-sizing: border-box;
+    }
+    &._brand {
+      width: 35px;
+      &:before {
+        left: 0px;
+        width: 35px;
+        height: 35px;
+        border: none;
+        background-color: transparent;
+        background-image: url(../svg/arrow2.svg);
+      }
     }
     &:hover,
     &:active,
@@ -374,6 +386,15 @@ strong {
   &__btn-next {
     right: 0;
     transform: rotate(180deg);
+  }
+  &__pagination {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    bottom: 15px + 13;
+    text-align: center;
+    color: $p-text-color;
   }
 }
 
