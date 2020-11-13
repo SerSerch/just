@@ -6,11 +6,24 @@ section.reviews._transition
       | который не&nbsp;требует подтверждения
     ._col-12._col-lg-9._offset-lg-3.reviews__title._c(data-aos="fade-right" data-aos-delay="500")
       | но&nbsp;все&nbsp;же, люди оставляют отзывы, и&nbsp;мы&nbsp;обязаны ими поделиться:
-    ._row._col-12._col-lg-9._offset-lg-3.reviews__list
-      .reviews__item-box
-        .reviews__item
-      .reviews__item-box
-        .reviews__item
+    .swiper-container._col-12._col-lg-9._offset-lg-3.reviews__list#revslider
+      .swiper-wrapper
+        .reviews__item-box.swiper-slide.swiper-slide-active
+          .reviews__item
+            img.reviews__img(src=require('../../reviews/1.jpg') alt="отзыв")
+        .reviews__item-box.swiper-slide
+          .reviews__item
+            img.reviews__img(src=require('../../reviews/2.jpg') alt="отзыв")
+        .reviews__item-box.swiper-slide
+          .reviews__item
+            img.reviews__img(src=require('../../reviews/3.jpg') alt="отзыв")
+        .reviews__item-box.swiper-slide
+          .reviews__item
+            img.reviews__img(src=require('../../reviews/4.jpg') alt="отзыв")
+        .reviews__item-box.swiper-slide
+          .reviews__item
+            img.reviews__img(src=require('../../reviews/5.jpg') alt="отзыв")
+      .swiper__pagination-bullets#reviews-pagination
     ._col-12._col-lg-8._offset-lg-4.reviews__text
       | Чтобы связаться с&nbsp;нашими клиентами,
       br

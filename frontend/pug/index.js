@@ -112,11 +112,33 @@ const swiperClients = new Swiper('#clients', {
   },
 });
 
+const swiperReviews = new Swiper('#revslider', {
+  slidesPerView: 'auto',
+  pagination: {
+    el: `#reviews-pagination`,
+    clickable: true,
+  },
+});
+
+const brand = new Swiper('#brand-all', {
+  slidesPerView: 'auto',
+  simulateTouch: false,
+  pagination: {
+    el: `#brand-pagination`,
+    clickable: true,
+  },
+  navigation: {
+    prevEl: '#brand-prev',
+    nextEl: '#brand-next',
+  },
+});
+
 for (let i of document.querySelectorAll('.swiper-container._js')) {
   let id = i.id;
-  let diet = new Swiper(`#${id}`, {
+  let reviews = new Swiper(`#${id}`, {
     slidesPerView: 1,
     spaceBetween: 27,
+    simulateTouch: false,
     navigation: {
       prevEl: `#${id}-prev`,
       nextEl: `#${id}-next`,

@@ -3,68 +3,163 @@ section.brand._transition
   ._container._row
     h2._col-12.brand__caption(data-aos="zoom-in")
       | Бренд&nbsp;&mdash; это&nbsp;то, что приносит Вам деньги
-    ._col-12.brand__title(data-aos="fade-right" data-aos-delay="500")
+    ._col-12.brand__title#brand-first(data-aos="fade-right" data-aos-delay="500")
       | С&nbsp;этой позиции мы&nbsp;реализуем наши проекты:
-    ._col-12._col-lg-9._offset-lg-1.brand__item
-      .brand__slider
-        .swiper-container._js#brand1
-          .swiper-wrapper
-            .swiper-slide.swiper-slide-active
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-        .swiper__btn-prev._brand#brand1-prev
-        .swiper__btn-next._brand#brand1-next
-        .swiper__pagination#brand1-pagination
-      .brand__text#brand-first(data-aos="fade-in" data-aos-delay="500")
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-    ._col-12._col-lg-9._offset-lg-1.brand__item
-      .brand__slider
-        .swiper-container._js#brand2
-          .swiper-wrapper
-            .swiper-slide.swiper-slide-active
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-        .swiper__btn-prev._brand#brand2-prev
-        .swiper__btn-next._brand#brand2-next
-        .swiper__pagination#brand2-pagination
-      .brand__text(data-aos="fade-in" data-aos-anchor="#brand-first" data-aos-delay="1000")
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-    ._col-12._col-lg-9._offset-lg-1.brand__item
-      .brand__slider
-        .swiper-container._js#brand3
-          .swiper-wrapper
-            .swiper-slide.swiper-slide-active
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-            .swiper-slide
-              .brand__logo
-        .swiper__btn-prev._brand#brand3-prev
-        .swiper__btn-next._brand#brand3-next
-        .swiper__pagination#brand3-pagination
-      .brand__text(data-aos="fade-in" data-aos-anchor="#brand-first" data-aos-delay="1500")
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-        | Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+    .brand__container._col-12._p-n
+      .swiper-container#brand-all(data-aos="fade-in" data-aos-anchor="#brand-first" data-aos-delay="1000")
+        .swiper-wrapper
+          .swiper-slide.swiper-slide-active.brand__item
+            .brand__slider
+              .swiper-container._js#brand1
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand1-prev
+              .swiper__btn-next._brand#brand1-next
+              .swiper__pagination#brand1-pagination
+            .brand__text
+              | Разработка позиционирования компании, логотипа, создание фирменного стиля и&nbsp;брендбука для использования во&nbsp;всех каналах коммуникации.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand2
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand2-prev
+              .swiper__btn-next._brand#brand2-next
+              .swiper__pagination#brand2-pagination
+            .brand__text
+              | Разработка позиционирования, логотипа и&nbsp;фирменного стиля компании.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand3
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand3-prev
+              .swiper__btn-next._brand#brand3-next
+              .swiper__pagination#brand3-pagination
+            .brand__text
+              | Ребрендинг. Разработка позиционирования и&nbsp;новой упаковки. Стратегия продвижения. Разработка рекламных материалов.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand4
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand4-prev
+              .swiper__btn-next._brand#brand4-next
+              .swiper__pagination#brand4-pagination
+            .brand__text
+              | Разработка концепции, позиционирование, создание рекламных материалов.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand5
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand5-prev
+              .swiper__btn-next._brand#brand5-next
+              .swiper__pagination#brand5-pagination
+            .brand__text
+              | Разработка позиционирования и&nbsp;нового фирменного стиля для компании. Маркетинговая стратегия. Разработка креативных концепций и&nbsp;рекламных материалов.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand6
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand6-prev
+              .swiper__btn-next._brand#brand6-next
+              .swiper__pagination#brand6-pagination
+            .brand__text
+              | Создание бренда. Разработка концепции, платформы бренда, позиционирование, упаковка, фирменный стиль. Стратегия вывода на&nbsp;рынок и&nbsp;коммуникационная стратегия.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand7
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand7-prev
+              .swiper__btn-next._brand#brand7-next
+              .swiper__pagination#brand7-pagination
+            .brand__text
+              | Создание бренда. Разработка концепции, платформы бренда, позиционирование, упаковка, фирменный стиль. Стратегия вывода на&nbsp;рынок и&nbsp;коммуникационная стратегия.
+          .swiper-slide.brand__item
+            .brand__slider
+              .swiper-container._js#brand8
+                .swiper-wrapper
+                  .swiper-slide.swiper-slide-active
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+                  .swiper-slide
+                    .brand__logo
+              .swiper__btn-prev._brand#brand8-prev
+              .swiper__btn-next._brand#brand8-next
+              .swiper__pagination#brand8-pagination
+            .brand__text
+              | Создание концепции бренда, позиционирование, упаковка. Разработка рекламных материалов.
+        .swiper__pagination-bullets#brand-pagination
+      .swiper__btn-prev.brand__btn#brand-prev
+      .swiper__btn-next.brand__btn#brand-next

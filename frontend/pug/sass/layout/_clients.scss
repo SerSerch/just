@@ -16,6 +16,11 @@
   &__slider {
     padding: 20px 68px;
   }
+  &__img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
 }
 
 @media (min-width: 768px) {

@@ -296,9 +296,6 @@ strong {
   &-container {
     padding: 15px 0;
   }
-  &-wrapper {
-    align-items: center;
-  }
   &-slide {
     &._clients {
       position: relative;
@@ -395,6 +392,34 @@ strong {
     bottom: 15px + 13;
     text-align: center;
     color: $p-text-color;
+  }
+  &__pagination-bullets {
+    display: flex;
+    position: absolute;
+    z-index: 11;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    min-height: 38px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  &-pagination-bullet {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    margin: 4px;
+    border-radius: 4px;
+    background-color: $p-active-color;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  &-pagination-bullet-active {
+    width: 18px;
+    height: 8px;
   }
 }
 

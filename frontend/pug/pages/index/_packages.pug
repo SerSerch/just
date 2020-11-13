@@ -1,16 +1,16 @@
 #packages.anchor
 .packages._transition
   ._container._row
-    ._col-12.packages__caption(data-aos="zoom-in")
+    ._col-12.packages__caption#packages-first(data-aos="zoom-in")
       | Если Вы&nbsp;не&nbsp;знаете, какие конкретно услуги Вам нужны
       br
       | мы подготовили удобные пакеты:
     ._col-12._row._p-n.packages__list
       ._col-12._col-lg-4.packages__item-box
-        .packages__item#packages-first(data-aos="fade-up" data-aos-delay="500")
+        .packages__item(data-aos="fade-up" data-aos-anchor="#packages-first" data-aos-delay="500")
           .packages__title
             | &laquo;Для улучшения&raquo;
-          .packages__text
+          .packages__text._full
             | Если хотите, чтобы
             | Ваш текущий бренд
             | стал более прибыльным,
@@ -26,7 +26,7 @@
         .packages__item(data-aos="fade-up" data-aos-anchor="#packages-first" data-aos-delay="1000")
           .packages__title
             | &laquo;Для создания&raquo;
-          .packages__text
+          .packages__text._full
             | Если Вы&nbsp;хотите
             | создать новый бренд
             | или запустить бизнес.
@@ -40,7 +40,7 @@
         .packages__item(data-aos="fade-up" data-aos-anchor="#packages-first" data-aos-delay="1500")
           .packages__title
             | &laquo;Для масштабирования&raquo;
-          .packages__text
+          .packages__text._full
             | Если выходите
             | на&nbsp;новые рынки,
             | создаете франшизу

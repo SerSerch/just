@@ -17,10 +17,13 @@
     overflow: hidden;
   }
   &__item {
+    display: flex;
     width: 100%;
     max-width: 332px;
+    height: 100%;
     margin: 0 auto;
     padding: 40px 20px;
+    flex-direction: column;
     text-align: center;
     background-color: #fff;
     border-radius: 40px;
@@ -40,6 +43,11 @@
     line-height: 1.57;
     font-size: 1.125rem;
     box-sizing: border-box;
+    &._full {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+    }
     &:before {
       display: block;
       position: absolute;
