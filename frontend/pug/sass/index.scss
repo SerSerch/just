@@ -248,7 +248,7 @@ strong {
   }
   &__close {
     position:absolute;
-    z-index: 102;
+    z-index: 103;
     top:15px;
     right:15px;
     width:60px;
@@ -290,6 +290,20 @@ strong {
   &__text {
     padding: 5px 15px;
     text-align: center;
+  }
+  &__image {
+    position: absolute;
+    max-width: 1200px;
+    max-height: 1200px;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
   }
 }
 .swiper {

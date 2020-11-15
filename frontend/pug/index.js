@@ -2,9 +2,11 @@ import AOS from 'aos';
 
 import 'normalize.css';
 import 'aos/dist/aos.css';
-import './swiper-bundle.min.css';
+import './sass/swiper.scss';
+import './sass/lazy.scss';
 import './fonts/fonts.css'
 import './sass/index.scss';
+
 
 AOS.init({
   // Global settings:
@@ -28,7 +30,7 @@ AOS.init({
   anchorPlacement: 'bottom-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-const Swiper = require('./swiper-bundle.min.js');
+const Swiper = require('./swiper.min');
 
 function setSelectionRange(input, selectionStart, selectionEnd) {
   if (input.setSelectionRange) {
@@ -103,6 +105,14 @@ for (let i of document.querySelectorAll('input[type="tel"]')) {
   i.addEventListener('input', inputPhone);
 }
 
+function showImage(e) {
+  let element = e.target;
+  if(element.classList.contains('brand__logo') && element.style.backgroundImage) {
+    document.querySelector('.modal__image').style.backgroundImage = element.style.backgroundImage;
+    document.querySelector('#image-modal').checked = true;
+  }
+}
+
 const swiperClients = new Swiper('#clients', {
   slidesPerView: 'auto',
   spaceBetween: 27,
@@ -139,15 +149,15 @@ for (let i of document.querySelectorAll('.swiper-container._js')) {
     slidesPerView: 1,
     spaceBetween: 27,
     simulateTouch: false,
+    preloadImages: false,
+    lazy: true,
+    watchSlidesVisibility: true,
     navigation: {
       prevEl: `#${id}-prev`,
       nextEl: `#${id}-next`,
     },
-    pagination: {
-      el: `#${id}-pagination`,
-      type: 'fraction',
-    },
   });
+  i.addEventListener("click", showImage);
 }
 
 const sendForm = function (e) {

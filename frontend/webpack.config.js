@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         test: /\.(gif|png|jpe?g)$/,
-        exclude: /fonts|icons/,
+        exclude: /fonts|icons|brands/,
         use: [
           {
             loader: 'file-loader',
@@ -68,6 +68,18 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
+            }
+          },
+        ]
+      },
+      {
+        test: /brands[^\.]+\.(png|jpe?g)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'brands',
+              name: '[folder]_[name].[ext]',
             }
           },
         ]

@@ -28,11 +28,17 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     border-radius: 20px;
+    cursor: pointer;
+  }
+  &__name {
+    padding: 20px 15px 0;
+    font-weight: 700;
+    text-align: center;
   }
   &__text {
-    padding: 30px 15px 0;
+    padding: 10px 15px 0;
     box-sizing: border-box;
     max-width: 488px;
     text-align: center;
