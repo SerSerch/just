@@ -128,6 +128,10 @@ const swiperReviews = new Swiper('#revslider', {
     el: `#reviews-pagination`,
     clickable: true,
   },
+  navigation: {
+    prevEl: '#reviews-prev',
+    nextEl: '#reviews-next',
+  },
 });
 
 const brand = new Swiper('#brand-all', {

@@ -16,7 +16,7 @@
   &__item-box {
     width: 100%;
     min-width: 320px - 30;
-    max-width: 439px;
+    max-width: 439px - 20;
     padding: 15px;
     box-sizing: border-box;
   }
@@ -54,6 +54,14 @@
     &__title,
     &__text {
       font-size: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .reviews {
+    &__list {
+      margin: 0 20px;
     }
   }
 }
