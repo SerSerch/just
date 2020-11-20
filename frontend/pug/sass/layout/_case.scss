@@ -81,16 +81,18 @@
     padding-top: 20px;
     line-height: 1.43;
     font-size: 0.875rem;
+    box-sizing: border-box;
   }
   &__right-button {
     position: absolute;
     z-index: 11;
-    top: -5px;
+    bottom: -5px;
     left: 50%;
     width: 50px;
     height: 50px;
     background-image: url(../svg/decision.svg);
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, 50%) rotate(90deg);
+    transition: transform .7s ease;
   }
   &__sub-text {
     font-style: italic;
@@ -99,6 +101,29 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .case {
+    &__right {
+      //transform: translateY(-100px);
+      transition: translateY .7s ease;
+    }
+    &__right._active {
+      transform: translateY(0);
+    }
+    &__right-text {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .7s linear;
+    }
+    &__right._active &__right-text {
+      max-height: 500px;
+    }
+    &__right._active &__right-button {
+      transform: translate(-50%, 50%) rotate(-90deg);
+    }
   }
 }
 
@@ -157,7 +182,6 @@
       left: auto;
       right: 5px;
       transform: translate(50%, -50%);
-      transition: transform .7s ease;
     }
     &__right._active &__right-button {
       transform: translate(50%, -50%) rotate(-180deg);

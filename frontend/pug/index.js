@@ -105,14 +105,6 @@ for (let i of document.querySelectorAll('input[type="tel"]')) {
   i.addEventListener('input', inputPhone);
 }
 
-function showImage(e) {
-  let element = e.target;
-  if(element.classList.contains('brand__logo') && element.style.backgroundImage) {
-    document.querySelector('.modal__image').style.backgroundImage = element.style.backgroundImage;
-    document.querySelector('#image-modal').checked = true;
-  }
-}
-
 const swiperClients = new Swiper('#clients', {
   slidesPerView: 'auto',
   spaceBetween: 27,
@@ -146,6 +138,46 @@ const brand = new Swiper('#brand-all', {
     nextEl: '#brand-next',
   },
 });
+
+let showIndex = 0;
+let showWrapper = document.querySelector('#show-modal .swiper-wrapper');
+
+for (let i of document.querySelectorAll('.brand__logo')) {
+  i.dataset.idx = showIndex;
+
+  let slide = `<div class="swiper-slide modal__slide swiper-lazy" data-background="${i.dataset.background}"><div class="swiper-lazy-preloader"></div></div>`;
+
+  showWrapper.innerHTML += slide;
+  showIndex++;
+}
+
+showIndex = null;
+showWrapper = null;
+
+const showModal = new Swiper('#show-modal', {
+  slidesPerView: 1,
+  preloadImages: false,
+  lazy: true,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: `#show-pagination`,
+    clickable: true,
+  },
+  navigation: {
+    prevEl: '#show-prev',
+    nextEl: '#show-next',
+  },
+});
+
+function showImage(e) {
+  let element = e.target;
+  if(element.classList.contains('brand__logo') && element.style.backgroundImage) {
+
+    //document.querySelector('.modal__image').style.backgroundImage = element.style.backgroundImage;
+    showModal.slideTo(element.dataset.idx);
+    document.querySelector('#image-modal').checked = true;
+  }
+}
 
 for (let i of document.querySelectorAll('.swiper-container._js')) {
   let id = i.id;

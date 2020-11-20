@@ -1,7 +1,12 @@
 input#image-modal.modal__checkbox(type="checkbox")
 aside.modal
   label.modal__bg(for="image-modal")
-  label.modal__image(for="image-modal")
+  .modal__image-box
+    .swiper-container.modal__swiper#show-modal
+      .swiper-wrapper
+    .swiper__btn-prev.brand__btn#show-prev
+    .swiper__btn-next.brand__btn#show-next
+
   label.modal__close(for="image-modal")
 
 input#modal-close.modal__checkbox(type="checkbox")

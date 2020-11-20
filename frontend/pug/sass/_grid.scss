@@ -50,6 +50,11 @@ xxl > 1600
       @extend ._col;
     }
   }
+  &-6 {
+    @extend ._col;
+    flex: 0 0 (100% / 12) * 6;
+    max-width: (100% / 12) * 6;
+  }
   @for $i from 12 to 13 {
     &-#{$i} {
       @extend ._col;

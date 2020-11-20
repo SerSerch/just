@@ -8,57 +8,15 @@
     top: 70px;
     left: 0;
     right: 0;
-    height: 570px + 130;
+    height: (570px + 130) / 2;
     background-image: url(../img/about.png);
     background-position: bottom center;
+    background-size: contain;
   }
-  &__bubles-box {
-    position: absolute;
-    z-index: 3;
-    top: 70px  + 100;
-    left: 0;
-    right: 0;
-    height: 570px + 130;
-    overflow: hidden;
-  }
-  &__buble {
-    position: absolute;
-    right: 50%;
-    border-radius: 50%;
-    background-color: $p-active-color;
-    &._i1 {
-      top: 74px;
-      width: 176px;
-      height: 176px;
-      transform: translateX(-125px);
-      animation: 10s ease 0s infinite about-bl1;
-    }
-    &._i2 {
-      top: 353px;
-      width: 82px;
-      height: 82px;
-      transform: translateX(-180px);
-      animation: 15s ease 0s infinite about-bl2;
-    }
-    &._i3 {
-      top: 455px + 15;
-      width: 44px;
-      height: 44px;
-      transform-origin: 15px 15px;
-      transform: translateX(-98px);
-      animation: 10s linear 0s infinite about-bl3;
-    }
-    &._i4 {
-      top: 477px;
-      width: 82px;
-      height: 82px;
-      transform: translateX(160px);
-      animation: 20s ease 0s infinite about-bl4;
-    }
-  }
+
   &__button-box {
     display: flex;
-    padding-top: 570px  + 130;
+    padding-top: (570px  + 130) / 2;
     justify-content: center;
     box-sizing: border-box;
   }
@@ -98,6 +56,7 @@
 @media (min-width: 768px) {
   .about {
     &:before {
+      height: 570px + 130;
       right: 50%;
       background-position: bottom right 117px;
     }
@@ -110,9 +69,49 @@
       background-position: left 515px bottom;
     }
     &__bubles-box {
+      position: absolute;
+      z-index: 3;
+      top: 70px  + 100;
       left: auto;
       right: 50%;
       min-width: 831px;
+      height: 570px + 130;
+      overflow: hidden;
+    }
+    &__buble {
+      position: absolute;
+      right: 50%;
+      border-radius: 50%;
+      background-color: $p-active-color;
+      &._i1 {
+        top: 74px;
+        width: 176px;
+        height: 176px;
+        transform: translateX(-125px);
+        animation: 10s ease 0s infinite about-bl1;
+      }
+      &._i2 {
+        top: 353px;
+        width: 82px;
+        height: 82px;
+        transform: translateX(-180px);
+        animation: 15s ease 0s infinite about-bl2;
+      }
+      &._i3 {
+        top: 455px + 15;
+        width: 44px;
+        height: 44px;
+        transform-origin: 15px 15px;
+        transform: translateX(-98px);
+        animation: 10s linear 0s infinite about-bl3;
+      }
+      &._i4 {
+        top: 477px;
+        width: 82px;
+        height: 82px;
+        transform: translateX(160px);
+        animation: 20s ease 0s infinite about-bl4;
+      }
     }
     &__caption {
       text-align: left;
