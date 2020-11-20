@@ -104,10 +104,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .case {
     &__right {
-      //transform: translateY(-100px);
       transition: translateY .7s ease;
     }
     &__right._active {
