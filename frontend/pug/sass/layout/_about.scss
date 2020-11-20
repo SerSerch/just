@@ -58,6 +58,7 @@
     &:before {
       height: 570px + 130;
       right: 50%;
+      background-size: auto;
       background-position: bottom right 117px;
     }
     &:after {
@@ -115,6 +116,9 @@
     }
     &__caption {
       text-align: left;
+    }
+    &__button-box {
+      padding-top: 570px  + 130;
     }
   }
 }
