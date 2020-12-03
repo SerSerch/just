@@ -14,6 +14,7 @@ aside.modal
   label.modal__bg(for="modal-close")
   ._col-12.modal__form-box
     form._row.modal__form._p-n(action="/mail.php" method="POST")
+      input#modal-target(name="target" type="text" hidden style="display:none" value="Форма в модальном окне")
       ._col-12.modal__caption
         | Свяжитесь с нами прямо сейчас
       ._col-12.modal__text

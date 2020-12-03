@@ -239,3 +239,12 @@ function openRight(e) {
 for (let i of document.querySelectorAll('.case__right-button')) {
   i.addEventListener('click', openRight);
 }
+
+function addTarget(e) {
+  const element = e.currentTarget;
+  document.querySelector('#modal-target').value = element.dataset.target;
+}
+
+for (let i of document.querySelectorAll('._js-target')) {
+  i.addEventListener('click', addTarget);
+}

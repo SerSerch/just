@@ -12,6 +12,7 @@ if((isset($_POST['phone']) && $_POST['phone'] != "")  && $SSE <= 5 ) {
                     </head>
                     <body>
                         <p>Откуда: '.$subject.'</p>
+                        <p>Таргет: '.(isset($_POST['target']) ? $_POST['target'] : '').'</p>
                         <p>Имя: '.(isset($_POST['name']) ? $_POST['name'] : '').'</p>
                         <p>Телефон: '.$_POST['phone'].'</p>
                         <p>Почта: '.(isset($_POST['mail']) ? $_POST['mail'] : '').'</p>
